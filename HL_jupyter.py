@@ -68,10 +68,6 @@ while True:
     print(f"Starting with {p_nought} grams of {isotope} after {time} seconds there will be {round(p, 2)} grams remaining")
     print(f"In order to have 5 grams left after 30 seconds you should start with {round(start_amount, 2)} grams")
     print("")
-    # Plot the graph
-    plt.clf() #clears any plots juust in case.
-    do_graph(time_series, isotope) #builds a graph using current isotope data
-    plt.show()
     # Go round again or finish up
     if input("Do you want to do another isotope y/n") == "n":
         print("")
